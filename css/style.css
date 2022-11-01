@@ -1,5 +1,4 @@
 *{
-    margin: auto;
     padding: 0;
     max-width: 1520px;
 }
@@ -382,11 +381,31 @@ a{
     align-items: center;
     color: white;
 }
+.testmonial-button button{
+    width: 50px;
+    height: 50px;
+    border: 50%;
+    color: black;
+    /* position: absolute; */
+    border-radius: 50%;
+    background-color: #5eb6e1;
+    color: white;
+    font-size: 30px;
+    margin: 50px;
+}
+.testmonial-button{
+    position: absolute;
+    display: flex;
+    width: 1520px;
+    justify-content: space-between;
+    transform: translate(0px,250px);
+
+}
 .testmonial-al{
     background-color: rgb(24, 26, 31);
     height: 600px;
     width: 1520px;
-    margin-top: 100px;
+    margin-top: 80px;
    
 }
 .testmonial-al1{
@@ -421,27 +440,63 @@ a{
     width: 20%;
     background-color: #5eb6e1; 
 }
+/* news */
 .news{
     width: 1520px;
     height: 916px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: white;
+    flex-direction: column;
 }
-.news hr{
-    width: 25%;
+.news-header hr{
+    width: 5%;
     background-color: #5eb6e1;
 }
-.news-main-product{
-    background-color: black;
-    width: 300px;
-    height: 400px;
+.news-main{
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
 }
-
-.news-main-product img{
+.news-main-product{
+    width: 350px;
+    height: 450px;
+    background-color: black;
+    color: white;
+    margin: 40px;
+}
+.product-tong{
+    margin: 20px;
+}
+.product-tong-top img{
     width: 300px;
-    height: 300px;
+    height: 200px;
+}
+.product-tong-center{
+    text-align: start;
+}
+.product-tong-center h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(81, 155, 190);
+}
+.product-tong-center p{
+    margin-bottom: 30px;
+}
+.product-tong-bottom{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.product-tong-bottom p{
+    margin: -5px 0 0 0;
+}
+.tong-bottom{
+    display: flex;
+}
+.tong-bottom i{
+    margin-right: 10px;
+    color: rgb(81, 155, 190);
 }
