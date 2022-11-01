@@ -292,7 +292,7 @@ a{
     margin-bottom: 10px;
 }
 .single-img:hover .img-text{
-    transform: translate(0 , -30%) ;
+    transform: translate(0 , -80%) ;
     background: rgb(79, 159, 233);
     opacity: 0.75;
     margin: 0 0 0 100px;
@@ -335,14 +335,32 @@ a{
     height: 350px;
     margin: 20px;
 }
-.meet-main-product-top{
-    background-image: url(/image/brunette-woman-.png);
+.meet-main-product-top1{
     width: 250px;
     height: 70%;
     background-size: cover;                     
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center center; 
+    background-image: url(/image/brunette-woman-.png);
+}
+.meet-main-product-top1{
+    width: 250px;
+    height: 70%;
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center center; 
+    background-image: url(/image/brunette-woman-.png);
+}
+.meet-main-product-top1{
+    width: 250px;
+    height: 70%;
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center center; 
+    background-image: url(/image/brunette-woman-.png);
 }
 .meet-main-product-down{
     display: flex;
@@ -418,6 +436,6 @@ a{
 }
 .testmonial-h hr{
     width: 20%;
-    background-color: red;
+    background-color: #5eb6e1;
     
 }
