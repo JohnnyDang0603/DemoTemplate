@@ -386,7 +386,6 @@ a {
   height: 50px;
   border: 50%;
   color: black;
-  /* position: absolute; */
   border-radius: 50%;
   background-color: #5eb6e1;
   color: white;
@@ -453,9 +452,6 @@ a {
 }
 .news-main {
   display: flex;
-  /* justify-content: center;
-    align-items: center;
-    text-align: center; */
 }
 .news-main-product {
   width: 350px;
@@ -499,8 +495,8 @@ a {
 }
 .contactus {
   width: 1520px;
-  height: 916px;
-  background-color: rgb(24, 26, 31);
+  height: auto;
+  background-color: rgb(40, 47, 47);
   color: white;
 }
 .contactus-top h1 {
@@ -508,18 +504,18 @@ a {
 }
 .contactus-top hr {
   width: 20%;
-  border-top: 1px solid red;
+  border-top: 2px solid #5eb6e1;
   margin: 0;
 }
 .contactus-top {
   display: flex;
-  height: 700px;
+  height: 800px;
 }
 .contactus-top-left {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
 }
 .top-left-tong {
   display: flex;
@@ -553,8 +549,89 @@ a {
 }
 .contactus-top-right {
   background-image: url(/image/female-bodybuil.png);
-  width: 40%;
+  width: 50%;
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;
+}
+.top-left-tong button {
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  background-color: rgb(94, 182, 225);
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.top-left-tong ul {
+}
+.top-left-tong ul i {
+  margin-right: 30px;
+  color: rgb(94, 182, 225);
+}
+.contactus-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactus-main-tong {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+  width: 1200px;
+  height: 300px;
+}
+.contactus-main-left {
+  margin: 200px;
+  height: 200px;
+}
+.contactus-main-left-logo {
+  display: flex;
+  width: 40%;
+  height: 20px;
+}
+.contactus-main-center {
+  width: 25%;
+  margin: 20px;
+}
+
+.contactus-main-right {
+  width: 25%;
+  margin: 20px;
+}
+.contactus-main-center-line {
+  display: flex;
+  align-items: center;
+}
+.contactus-main-center-line i {
+  margin-right: 10px;
+  color: #5eb6e1;
+}
+.contactus-main-center-p1 {
+  width: 200px;
+}
+.contactus-main-center-ul i {
+  margin-right: 12px;
+  color: #5eb6e1;
+}
+.contactus-main-right p {
+  height: 30px;
+  opacity: 0.75;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.contactus-main-right .dong1 {
+  display: flex;
+}
+.contactus-main-right .dong2 {
+  display: flex;
+}
+.contactus-main-right .dong3 {
+  display: flex;
 }
