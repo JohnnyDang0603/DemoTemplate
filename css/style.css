@@ -1,11 +1,10 @@
 * {
-  padding: 0;
+  margin: auto;
   max-width: 1520px;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 100%;
 }
 .top {
   display: flex;
@@ -39,8 +38,15 @@ body {
   height: 916px;
   background-image: url('/image/girl-resting-af.png');
   background-position: 100%;
-  left: -25%;
   color: white;
+  object-fit: cover;
+  background-position: 25%;
+}
+/* media for mobile */
+@media screen and (max-width: 740px) {
+  .ab-right {
+    display: none;
+  }
 }
 .main-content {
   position: relative;
@@ -85,6 +91,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .down-product {
   width: 350px;
@@ -181,8 +188,9 @@ a {
 }
 .clasess {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   background-color: rgb(21, 21, 21);
   width: 100%;
 }
@@ -199,11 +207,11 @@ a {
 }
 .clasess-top p {
   margin-top: 30px;
-  width: 700px;
+  width: 80%;
   text-align: center;
 }
 .services {
-  width: 1520px;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -215,7 +223,6 @@ a {
   width: 506px;
   height: 400px;
   flex-direction: column-reverse;
-  flex-wrap: nowrap;
   overflow: hidden;
   transition: 0.3s;
   margin: 0;
@@ -298,9 +305,11 @@ a {
   width: 280px;
 }
 .meet {
-  width: 1520px;
+  width: 100%;
   max-width: 1520px;
-  height: 916px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 .meet-header {
   display: flex;
@@ -309,10 +318,10 @@ a {
   flex-direction: column;
 }
 .meet-header-p {
-  width: 700px;
   text-align: center;
   margin-bottom: 30px;
   opacity: 0.75;
+  width: 70%;
 }
 .meet-header-h {
   margin-bottom: 40px;
@@ -328,6 +337,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  flex-wrap: wrap;
 }
 .meet-main-product {
   width: 250px;
@@ -372,7 +382,7 @@ a {
   border-radius: 5px;
 }
 .testmonial {
-  width: 1520px;
+  width: 100%;
   height: 916px;
   display: flex;
   flex-direction: column;
@@ -395,14 +405,14 @@ a {
 .testmonial-button {
   position: absolute;
   display: flex;
-  width: 1520px;
+  width: 100%;
   justify-content: space-between;
   transform: translate(0px, 250px);
 }
 .testmonial-al {
   background-color: rgb(24, 26, 31);
   height: 600px;
-  width: 1520px;
+  width: 100%;
   margin-top: 80px;
 }
 .testmonial-al1 {
@@ -438,8 +448,8 @@ a {
 }
 /* news */
 .news {
-  width: 1520px;
-  height: 916px;
+  width: 100%;
+  height: auto;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -452,6 +462,9 @@ a {
 }
 .news-main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .news-main-product {
   width: 350px;
@@ -494,7 +507,7 @@ a {
   color: rgb(81, 155, 190);
 }
 .contactus {
-  width: 1520px;
+  width: 100%;
   height: auto;
   background-color: rgb(40, 47, 47);
   color: white;
@@ -521,12 +534,12 @@ a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 400px;
+  width: 120%;
   margin-left: 100px;
   margin-top: 100px;
 }
 .top-left-tong select {
-  width: 404px;
+  width: 50%;
   height: 40px;
   border-color: #5eb6e1;
   border-width: 2px;
@@ -535,14 +548,14 @@ a {
 }
 
 .top-left-tong .input1 {
-  width: 400px;
+  width: 30%;
   height: 40px;
   margin-bottom: 30px;
   border-color: #5eb6e1;
   border-width: 2px;
 }
 .top-left-tong .input2 {
-  width: 400px;
+  width: 30%;
   height: 100px;
   border-color: #5eb6e1;
   border-width: 2px;
