@@ -10,6 +10,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <div class="top">
@@ -17,18 +25,18 @@
         <img src="/images/logo1.PNG" alt="" />
       </div>
       <div class="top-center">
-        <ul id="idul">
-          <li class="idli" onclick="changbr(0)">
+        <ul class="idul">
+          <li class="idli" value="0">
             <a href="#">Home</a>
           </li>
-          <li class="idli" onclick="changbr(1)">
+          <li class="idli" id="val1" value="1">
             <a href="#">About</a>
           </li>
-          <li class="idli" onclick="changbr(2)">
+          <li class="idli" value="2">
             <a href="#">Clasess</a>
           </li>
-          <li class="idli" onclick="changbr(3)"><a href="#">News</a></li>
-          <li class="idli" onclick="changbr(4)"><a href="#">Contact</a></li>
+          <li class="idli" value="3"><a href="#">News</a></li>
+          <li class="idli" value="4"><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="top-right">03023093</div>
@@ -97,7 +105,9 @@
     </div>
     <div class="clasess">
       <div class="popup" id="popup">
-        <img src="404-tick.png" alt="" />
+        <div class="popup_close" onclick="closePopup()">
+          <i class="bx bx-x-circle"></i>
+        </div>
         <h2>Cảm ơn!</h2>
         <p>Chúc may mắn, hẹn gặp lại!</p>
         <button type="button" onclick="closePopup()">Cancel</button>
@@ -289,10 +299,6 @@
     </div>
     <div class="testmonial">
       <div class="testmonial-al img1">
-        <div class="testmonial-button">
-          <button onclick="plusSlides(-1)">&#60;</button>
-          <button onclick="plusSlides(1)">&#62;</button>
-        </div>
         <div class="testmonial-al1">
           <div class="testmonial-h">
             <h1>
@@ -314,14 +320,14 @@
           </div>
         </div>
       </div>
+      <div class="testmonial-button">
+        <button onclick="plusSlides(-1)">&#60;</button>
+        <button onclick="plusSlides(1)">&#62;</button>
+      </div>
       <div
         class="testmonial-al img2"
         style="background-image: url('/images/backgr1.png')"
       >
-        <div class="testmonial-button">
-          <button onclick="plusSlides(-1)">&#60;</button>
-          <button onclick="plusSlides(1)">&#62;</button>
-        </div>
         <div class="testmonial-al1">
           <div class="testmonial-h">
             <h1>
@@ -349,10 +355,6 @@
         class="testmonial-al img3"
         style="background-image: url('/images/backgr2.png')"
       >
-        <div class="testmonial-button">
-          <button onclick="plusSlides(-1)">&#60;</button>
-          <button onclick="plusSlides(1)">&#62;</button>
-        </div>
         <div class="testmonial-al1">
           <div class="testmonial-h">
             <h1>
