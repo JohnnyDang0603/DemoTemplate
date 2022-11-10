@@ -14,7 +14,6 @@ body {
   flex-wrap: wrap;
   width: 100%;
   background-color: white;
-  position: fixed;
 }
 .top-left img {
   width: 100px;
@@ -28,8 +27,13 @@ body {
 }
 .top-center ul li {
   list-style: none;
-  margin: 10px 25px;
+  padding: 10px 25px;
+  border-radius: 5px;
 }
+.top-center ul li:hover {
+  background-color: #5eb6e1;
+}
+
 .top-center ul li a {
   text-decoration: none;
   color: black;
@@ -195,7 +199,63 @@ a {
   text-align: center;
   background-color: rgb(21, 21, 21);
   width: 100%;
+  position: relative;
 }
+/* start buy */
+.popup {
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 1000;
+}
+.open-popup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+}
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: orange;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+/* news */
 .clasess hr {
   width: 20%;
 }
@@ -266,10 +326,9 @@ a {
   padding: auto;
   width: 100%;
   height: auto;
-  position: relative;
   line-height: 25px;
+  transform: translate(0, 220px);
   transition: 0.5s ease;
-  /* display: inline-block; */
   text-align: center;
   color: rgb(255, 255, 255);
   justify-content: center;
@@ -279,7 +338,6 @@ a {
   width: 25%;
   color: white;
   background: rgb(255, 255, 255);
-  position: absolute;
 }
 .img-text h4 {
   line-height: 15px;
@@ -301,7 +359,7 @@ a {
 .single-img:hover .img-text {
   transform: translate(50%, -60%);
   background: rgb(79, 159, 233);
-  opacity: 0.75;
+  /* opacity: 0.75; */
   margin: 0;
   width: 50%;
 }
@@ -410,12 +468,16 @@ a {
   justify-content: space-between;
   transform: translate(0px, 250px);
 }
+
 .testmonial-al {
   background-color: rgb(24, 26, 31);
+  background-position: center;
+  background-size: cover;
   height: 600px;
   width: 100%;
   margin-top: 80px;
 }
+
 .testmonial-al1 {
   margin-top: 150px;
   display: flex;
@@ -446,7 +508,7 @@ a {
   width: 20%;
   background-color: #5eb6e1;
 }
-/* news */
+
 .news {
   width: 100%;
   height: auto;

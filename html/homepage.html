@@ -17,12 +17,18 @@
         <img src="/images/logo1.PNG" alt="" />
       </div>
       <div class="top-center">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Clasess</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
+        <ul id="idul">
+          <li class="idli" onclick="changbr(0)">
+            <a href="#">Home</a>
+          </li>
+          <li class="idli" onclick="changbr(1)">
+            <a href="#">About</a>
+          </li>
+          <li class="idli" onclick="changbr(2)">
+            <a href="#">Clasess</a>
+          </li>
+          <li class="idli" onclick="changbr(3)"><a href="#">News</a></li>
+          <li class="idli" onclick="changbr(4)"><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="top-right">03023093</div>
@@ -90,6 +96,12 @@
       </div>
     </div>
     <div class="clasess">
+      <div class="popup" id="popup">
+        <img src="404-tick.png" alt="" />
+        <h2>Cảm ơn!</h2>
+        <p>Chúc may mắn, hẹn gặp lại!</p>
+        <button type="button" onclick="closePopup()">Cancel</button>
+      </div>
       <div class="clasess-top">
         <h1>Our Clasess</h1>
         <hr />
@@ -101,20 +113,22 @@
         </p>
       </div>
       <div class="services">
-        <a href="#">
+        <a>
           <span class="single-img img-1">
             <span class="img-text">
-              <h4>Cardio Fitness</h4>
+              <h4>Cardio Fitness1</h4>
               <hr />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
-        <a href="#">
+        <a>
           <span class="single-img img-2">
             <span class="img-text">
               <h4>Our Clasess</h4>
@@ -123,11 +137,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
-        <a href="#">
+        <a>
           <span class="single-img img-3">
             <span class="img-text">
               <h4>Cycle Training</h4>
@@ -136,11 +152,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
-        <a href="#">
+        <a>
           <span class="single-img img-4">
             <span class="img-text">
               <h4>Body Attacka</h4>
@@ -149,11 +167,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
-        <a href="#">
+        <a>
           <span class="single-img img-5">
             <span class="img-text">
               <h4>Weight Lifting</h4>
@@ -162,11 +182,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
-        <a href="#">
+        <a>
           <span class="single-img img-6">
             <span class="img-text">
               <h4>Yoga Pilates</h4>
@@ -175,7 +197,9 @@
                 Lorem ipsum dolor sit amedt, consectetur adipisicing elit. Esse,
                 quam.
               </p>
-              <button>Buy Now</button>
+              <button type="submit" class="classes-btn" onclick="openPopup()">
+                Buy Now
+              </button>
             </span>
           </span>
         </a>
@@ -264,15 +288,15 @@
       </div>
     </div>
     <div class="testmonial">
-      <div class="testmonial-al">
+      <div class="testmonial-al img1">
         <div class="testmonial-button">
-          <button>&#60;</button>
-          <button>&#62;</button>
+          <button onclick="plusSlides(-1)">&#60;</button>
+          <button onclick="plusSlides(1)">&#62;</button>
         </div>
         <div class="testmonial-al1">
           <div class="testmonial-h">
             <h1>
-              Testmonials
+              Testmonials1
               <hr />
             </h1>
           </div>
@@ -287,6 +311,67 @@
             <img src="/images/woman-exercing-.png" alt="" />
             <div class="head"><h3>ahmed elsayed</h3></div>
             <div class="foot">Our Client</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="testmonial-al img2"
+        style="background-image: url('/images/backgr1.png')"
+      >
+        <div class="testmonial-button">
+          <button onclick="plusSlides(-1)">&#60;</button>
+          <button onclick="plusSlides(1)">&#62;</button>
+        </div>
+        <div class="testmonial-al1">
+          <div class="testmonial-h">
+            <h1>
+              Testmonials2
+              <hr />
+            </h1>
+          </div>
+          <div class="testmonial-p">
+            <p>
+              Paragraphs are the building blocks of papers. Many students define
+              paragraphs in terms of length: a paragraph is a group of at least
+              five sentences, a paragraph is half a page long, etc. In reality,
+              though, the unity and coherence of ideas among sentences is what
+              constitutes a paragraph. A paragraph is defined as “a group of
+            </p>
+          </div>
+          <div class="testmonial-footer">
+            <img src="/images/avartar1.png" alt="" />
+            <div class="head"><h3>Mono</h3></div>
+            <div class="foot">helu</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="testmonial-al img3"
+        style="background-image: url('/images/backgr2.png')"
+      >
+        <div class="testmonial-button">
+          <button onclick="plusSlides(-1)">&#60;</button>
+          <button onclick="plusSlides(1)">&#62;</button>
+        </div>
+        <div class="testmonial-al1">
+          <div class="testmonial-h">
+            <h1>
+              Testmonials3
+              <hr />
+            </h1>
+          </div>
+          <div class="testmonial-p">
+            <p>
+              Before you can begin to determine what the composition of a
+              particular paragraph will be, you must first decide on an argument
+              and a working thesis statement for your paper. What is the most
+              important idea that you are trying to convey to your reader?
+            </p>
+          </div>
+          <div class="testmonial-footer">
+            <img src="/images/avartar2-modified.png" alt="" />
+            <div class="head"><h3>djasdjis</h3></div>
+            <div class="foot">helusdsodj</div>
           </div>
         </div>
       </div>
@@ -468,5 +553,6 @@
         ©2019 Prelude by Gym-Co. All Rights Reserved
       </div>
     </div>
+    <script src="/JS/main.js"></script>
   </body>
 </html>
